@@ -2,7 +2,7 @@
 let numbers = [100, 20, 3, 1000];
 let minNumber = numbers[0];
 
-for (let i = 1; i < numbers.length; i++) {
+for (let i = 0; i < numbers.length; i++) {
   if (numbers[i] < minNumber) {
     minNumber = numbers[i];
   }
