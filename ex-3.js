@@ -3,9 +3,10 @@ let numbers = [100, 20, 3, 1000];
 let minNumber = numbers[0];
 
 for (let i = 0; i < numbers.length; i++) {
-  if (numbers[i] < minNumber) {
+  if (i === 0) {
+    minNumber = numbers[i];
+  } else if (minNumber > numbers[i]) {
     minNumber = numbers[i];
   }
 }
-
 console.log(minNumber);
